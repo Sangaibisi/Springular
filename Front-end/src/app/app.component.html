@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div class="row">
-    <div class="col-md-2">
+    <div *ngIf="loginService.isUserLoggedIn()" class="col-md-2">
         <app-sidebar></app-sidebar>
     </div>
 
