@@ -23,5 +23,4 @@ export class AddUserComponent implements OnInit {
         });
 
   };
-
 }

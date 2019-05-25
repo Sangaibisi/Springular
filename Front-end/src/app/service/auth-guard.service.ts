@@ -18,5 +18,4 @@ export class AuthGaurdService implements CanActivate {
     return false;
 
   }
-
 }
