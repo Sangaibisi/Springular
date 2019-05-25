@@ -15,10 +15,10 @@ import java.util.List;
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/customers")
-public class LoginController {
+public class CustomerController {
 
     ICustomerService _customerService;
-    public LoginController(ICustomerService customerService) {
+    public CustomerController(ICustomerService customerService) {
     	this._customerService=customerService;
     }
     

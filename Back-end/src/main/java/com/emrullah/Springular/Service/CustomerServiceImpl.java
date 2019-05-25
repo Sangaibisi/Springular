@@ -34,7 +34,7 @@ public class CustomerServiceImpl implements ICustomerService {
 			theCustomer = result.get();
 		} else {
 			// we didn't find the employee
-			throw new RuntimeException("Did not find employee id - " + id);
+			throw new RuntimeException("Did not find customer id - " + id);
 		}
 		return theCustomer;
 	}
@@ -48,6 +48,6 @@ public class CustomerServiceImpl implements ICustomerService {
 	@Override
 	public String deleteById(int id) {
 		_customerRepository.deleteById(id);
-		return "The user has been deleted!";
+		return "The customer has been deleted!";
 	}
 }
