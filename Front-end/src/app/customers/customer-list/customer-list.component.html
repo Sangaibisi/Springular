@@ -1,3 +1,14 @@
-<p>
-  customer-list works!
-</p>
+<table class="table table-hover">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Surname</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let cus of httpClientService.list">
+    <td (click)="populateForm(cus)">{{cus.id}}</td>
+    <td (click)="populateForm(cus)">{{cus.firstName}} {{cus.lastName}}</td>
+    <td (click)="populateForm(cus)">{{cus.email}}</td>
+    <td><button (click)="onDelete(cus.id)" class="btn btn-sm btn-outline-danger">X</button></td>
+  </tr>
+</table>

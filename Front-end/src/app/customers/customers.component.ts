@@ -11,5 +11,4 @@ export class CustomersComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
