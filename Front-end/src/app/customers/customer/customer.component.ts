@@ -31,6 +31,8 @@ export class CustomerComponent implements OnInit {
   }
 
   insertRecord(form:NgForm){
-
+    this.service.createCustomer(form.value).subscribe(res=>{
+      this.resetForm(form);
+    });
   }
 }
