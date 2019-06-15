@@ -21,7 +21,7 @@ import java.util.List;
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/customers")
-@Api(value="CustomerControllerAPI", produces=MediaType.APPLICATION_JSON_VALUE)
+@Api(value="CustomerControllerAPI", description="Customer Rest Controller Api Documentation")
 public class CustomerController {
 
     ICustomerService _customerService;

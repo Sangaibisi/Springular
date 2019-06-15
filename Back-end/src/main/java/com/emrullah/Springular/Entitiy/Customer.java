@@ -7,6 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 @Table(name="Customer")
 public class Customer {
@@ -14,6 +16,7 @@ public class Customer {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
+	@ApiModelProperty(notes="The unique identity for the customer")
 	private int id;
 	
 	@Column(name="first_name")
